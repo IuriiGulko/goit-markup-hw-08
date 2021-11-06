@@ -1,0 +1,106 @@
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.companies {
+  // display: flex;
+  justify-content: center;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 1200px;
+  }
+}
+
+.companies__link {
+  display: flex;
+  border: 1px solid #afb1b8;
+  // width: 172px;
+  height: 92px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: solid 1px var(--accent-color);
+  }
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.companies__item {
+  // &:not(:first-child) {
+  //   margin-left: 30px;
+  // }
+  @media screen and (min-width: 480px) {
+    flex-basis: calc(100% / 2 -30px);
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 -30px);
+    &:nth-child(3n) {
+      margin-left: 30px;
+    }
+
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+.companies__icon {
+  width: 106px;
+  height: 60px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  // margin-left: 32px;
+  // margin-right: 32px;
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .companies__link:hover &,
+  .companies__link:focus & {
+    fill: var(--accent-color);
+  }
+  @media screen and (min-width: 480px) {
+    margin-left: 52px;
+    margin-right: 52px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}

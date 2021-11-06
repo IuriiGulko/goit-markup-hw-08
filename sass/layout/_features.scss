@@ -1,0 +1,98 @@
+.features-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.features-list__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.features-list__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.features-list__item {
+  // margin-left: 30px;
+  // width: 270px;
+  // &:first-child {
+  //   margin-left: 0;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 -30px);
+    width: 354px;
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-left: 30px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.features-icon-list {
+  display: flex;
+}
+
+.features-list__icon {
+  margin-bottom: 30px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-style: none;
+  justify-content: center;
+  align-items: center;
+  // &:not(:first-child) {
+  //   margin-left: 30px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.social-icon-features {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 480px) {
+    margin-left: 190px;
+    margin-right: 190px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 142px;
+    margin-right: 142px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
