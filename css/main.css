@@ -429,14 +429,16 @@ body {
 
 .mob-menu {
   width: 100vw;
-  justify-content: center;
+  position: relative;
   height: 100vh;
   position: fixed;
   background-color: #fff;
+  justify-content: space-between;
   left: 0;
   right: 0;
   padding: 10px 15px 48px 40px;
   display: flex;
+  justify-content: center;
 }
 
 .menu {
@@ -449,6 +451,10 @@ body {
   }
 }
 
+.mob-menu-bottom {
+  margin-bottom: -306px;
+}
+
 .mob-menu-content {
   padding-top: 38px;
   display: flex;
@@ -456,7 +462,6 @@ body {
   justify-content: space-between;
   left: 50px;
   position: relative;
-  margin-bottom: -306px;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -484,6 +489,12 @@ body {
 
 .mob-menu-bottom {
   margin-left: -85px;
+}
+
+@media screen and (max-hight: 600px) {
+  .mob-menu-bottom {
+    margin-bottom: 50px;
+  }
 }
 
 .mob-menu-list {
