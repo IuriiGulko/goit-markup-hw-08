@@ -265,6 +265,7 @@
 }
 .mob-menu-bottom {
   margin-bottom: -306px;
+  margin-left: -85px;
 }
 .mob-menu-content {
   padding-top: 38px;
@@ -297,7 +298,8 @@
     }
   }
 }
-.mob-menu-bottom {
+
+.mob-socials .mob-menu-bottom {
   margin-left: -85px;
   @media screen and (max-hight: 600px) {
     margin-bottom: 50px;

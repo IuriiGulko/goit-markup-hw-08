@@ -453,6 +453,7 @@ body {
 
 .mob-menu-bottom {
   margin-bottom: -306px;
+  margin-left: -85px;
 }
 
 .mob-menu-content {
@@ -487,12 +488,12 @@ body {
   color: var(--accent-color);
 }
 
-.mob-menu-bottom {
+.mob-socials .mob-menu-bottom {
   margin-left: -85px;
 }
 
 @media screen and (max-hight: 600px) {
-  .mob-menu-bottom {
+  .mob-socials .mob-menu-bottom {
     margin-bottom: 50px;
   }
 }
