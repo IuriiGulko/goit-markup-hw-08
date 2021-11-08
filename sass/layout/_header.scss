@@ -246,16 +246,14 @@
 }
 .mob-menu {
   width: 100vw;
-  position: relative;
+  justify-content: center;
   height: 100vh;
   position: fixed;
   background-color: #fff;
-  justify-content: space-between;
   left: 0;
   right: 0;
   padding: 10px 15px 48px 40px;
   display: flex;
-  justify-content: center;
 }
 .menu {
   z-index: 999;
@@ -263,11 +261,7 @@
     justify-content: space-between;
   }
 }
-.mob-menu-bottom {
-  position: absolute;
-  top: 562px;
-  bottom: 48px;
-}
+
 .mob-menu-content {
   padding-top: 38px;
   display: flex;
@@ -275,6 +269,7 @@
   justify-content: space-between;
   left: 50px;
   position: relative;
+  margin-bottom: -306px;
 }
 
 .mob-menu-item {
@@ -301,9 +296,6 @@
 }
 .mob-menu-bottom {
   margin-left: -85px;
-  @media screen and (max-hight: 600px) {
-    margin-bottom: 50px;
-  }
 }
 .mob-menu-list {
   margin-right: 221px;
