@@ -7,6 +7,15 @@
   color: var(--primary-text-color);
   margin-bottom: 50px;
   justify-content: center;
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 786px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 .companies {
   // display: flex;
@@ -61,6 +70,12 @@
       margin-left: 30px;
     }
     margin-bottom: 30px;
+    &:nth-child(5n) {
+      margin-bottom: 0;
+    }
+    &:nth-child(6n) {
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: 768px) {
     margin-left: 30px;
@@ -70,11 +85,21 @@
     }
 
     margin-bottom: 30px;
+    &:nth-child(4n) {
+      margin-bottom: 0;
+    }
+    &:nth-child(5n) {
+      margin-bottom: 0;
+    }
+    &:nth-child(6n) {
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: 1200px) {
     &:not(:first-child) {
       margin-left: 30px;
     }
+    margin-bottom: 0;
   }
 }
 .companies__icon {
