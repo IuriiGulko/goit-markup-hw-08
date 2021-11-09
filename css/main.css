@@ -402,15 +402,15 @@ body {
   display: flex;
   border: none;
   background-color: transparent;
+  top: 1px;
+  right: 15px;
+  position: absolute;
+  padding: 0;
 }
 
 .mob-close-icon {
   width: 40px;
   height: 40px;
-  position: absolute;
-  margin-left: 385px;
-  top: 1px;
-  right: 15px;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -452,7 +452,6 @@ body {
 }
 
 .mob-menu-bottom {
-  margin-bottom: -306px;
   margin-left: -85px;
 }
 
@@ -687,9 +686,6 @@ body {
     justify-content: center;
     margin-bottom: 30px;
   }
-  .features-list__item:nth-child(3n) {
-    margin-bottom: 0;
-  }
   .features-list__item:nth-child(4n) {
     margin-bottom: 0;
   }
@@ -892,7 +888,6 @@ body {
   .team-item {
     width: 450px;
     margin-bottom: 30px;
-    height: 622px;
   }
   .team-item:nth-child(4n) {
     margin-bottom: 0;
@@ -934,24 +929,26 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 480px) {
   .team-title {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 786px) {
   .team-title {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1024,25 +1021,27 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 50px;
   justify-content: center;
 }
 
 @media screen and (min-width: 480px) {
   .clients-title {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 786px) {
   .clients-title {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients-title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1547,6 +1546,12 @@ address {
     margin-right: 159px;
     margin-left: 159px;
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 

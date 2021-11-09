@@ -41,7 +41,6 @@
   @media screen and (min-width: 480px) {
     width: 450px;
     margin-bottom: 30px;
-    height: 622px;
     &:nth-child(4n) {
       margin-bottom: 0;
     }
@@ -77,15 +76,18 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   justify-content: center;
-  margin-bottom: 50px;
+
   @media screen and (min-width: 480px) {
     font-size: 28px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 786px) {
     font-size: 28px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 .team-member-position {
